@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgb(38, 66, 73),lightgrey);
+}
+.heading{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.cards{
+    width: 100%;
+    height: auto;
+}
+.card:hover{
+    box-shadow: 0px 30px 18px -8px rgb(216, 100, 5);
+    transform: scale(1.05,1.05);
+}
+.card{
+    border-radius: 22px;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(211, 130, 8, 0.835));
+    /* width: 20%; */
+    float: left;
+    margin: 6%;
+}
+.card img{
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+.card_info{
+    padding: 24px 40px 25px 22px;
+}
+.card_category{
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.card_title{
+    font-family: 'Ramaraja', serif;
+    font-size: 20px;
+}
+.card_info button{
+    border: 5px solid black;
+    border-radius: 4px;
+    width: 90px;
+    margin-top: 12px;
+    padding: 5px 7px;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+  
+}
+.btn:hover{
+    background-color: black;
+    color:bisque;
+}
+
+
+@media (max-width:768px) {
+    .card{
+        float:none;
+        margin:5%;
+        width:90%;
+    }
+}
