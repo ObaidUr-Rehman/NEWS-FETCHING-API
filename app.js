@@ -6,7 +6,6 @@ fetch('https://newsapi.org/v2/everything?q=apple&from=2022-09-21&to=2022-09-21&s
     }).then((Appledata)=>{ 
       console.log(Appledata); 
       display(Appledata.articles);
-
  
     }) 
     .catch((error)=>{ 
@@ -49,7 +48,7 @@ function display(data){
         button.setAttribute("class","btn");
         let buttontext=document.createTextNode("Read More");
 
-
+        
         button.appendChild(buttontext);
         link.appendChild(button);
         div.appendChild(img);
@@ -61,9 +60,7 @@ function display(data){
         divcardinfo.appendChild(link);
 
 
-        
         maindiv.appendChild(div)
-
         // console.log(data[key].title)
     }
 }
